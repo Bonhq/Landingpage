@@ -1,0 +1,4 @@
+export default {
+    BLOG_LOADING_STATUS: "BLOG_LOADING_STATUS",
+    BLOG_DATA: "BLOG_DATA",
+}

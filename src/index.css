@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import '././assets/fonts/foundersGrotesk.css';
+@config '../tailwind.config.js';
+
+html, body, #root {
+  height: 100%;
+}
+
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+.font-format-Helvetica-Neue {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.swiper {
+  scroll-snap-type: x mandatory;
+}
+.swiper-slide {
+  scroll-snap-align: start;
+}
