@@ -12,8 +12,8 @@ const TermsPage = () => {
                     <p className="md:text-5xl text-[32px] font-bold">Terms and conditions</p>
                 </div>
 
-                <div className="flex items-center justify-center">
-                    <div className="container md:px-15 px-4">
+                <div className="flex items-center justify-center w-full">
+                    <div className=" w-full md:px-10 px-4 sm:px-6 lg:px-[120px]">
                         <div className="condition-article my-10">
                             <p className="py-4">Effective Date: August 26, 2024</p>
                             <h3>Introduction</h3>

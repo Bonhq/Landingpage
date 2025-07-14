@@ -40,7 +40,7 @@ const HeaderLanding = () => {
   return (
     <header className='bg-white sticky top-0 z-50 w-full'>
       <div className='w-full px-4 sm:px-6 lg:py-6 xl:py-8 lg:px-[120px]'>
-        <div className='max-w-7xl mx-auto flex justify-between items-center'>
+        <div className=' mx-auto flex justify-between items-center'>
           {/* Logo */}
           <div
             className='flex-shrink-0 cursor-pointer'
