@@ -27,7 +27,9 @@ const FooterLanding = () => {
   };
 
   const handleBlogNavigation = () => {
-    navigate("/blog");
+    if (location?.pathname !== "/blog") {
+      navigate("/blog");
+    }
   };
 
   const handleTandCNavigation = () => {
@@ -112,19 +114,31 @@ const FooterLanding = () => {
             </button>
           </div>
           <div className='space-y-0 flex flex-col'>
-            <div className=' hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] lg:mt-[42px] cursor-pointer' onClick={handleBlogNavigation}>
+            <div
+              className={` hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] lg:mt-[42px] ${location?.pathname !== '/blog' ? 'cursor-pointer' : 'none' } `}
+              onClick={handleBlogNavigation}
+            >
               Blogs
             </div>
-            <div className=' hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] cursor-pointer'>
+            {/* <div className=' hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] cursor-pointer'>
               Press & Media
-            </div>
-            <div className=' hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] cursor-pointer' onClick={handleRedirectCred}>
+            </div> */}
+            <div
+              className=' hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] cursor-pointer'
+              onClick={handleRedirectCred}
+            >
               CredGPT
             </div>
-            <div className=' hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] cursor-pointer' onClick={handlePrivacyPolicyNavigation}>
+            <div
+              className=' hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] cursor-pointer'
+              onClick={handlePrivacyPolicyNavigation}
+            >
               Privacy Policy
             </div>
-            <div className=' hover:text-gray-300 transition-colors block lg:text-[20px] text-white lg:leading-[30px] cursor-pointer' onClick={handleTandCNavigation}>
+            <div
+              className=' hover:text-gray-300 transition-colors block lg:text-[20px] text-white lg:leading-[30px] cursor-pointer'
+              onClick={handleTandCNavigation}
+            >
               Terms & Conditions
             </div>
           </div>

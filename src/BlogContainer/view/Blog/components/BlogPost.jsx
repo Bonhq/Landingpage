@@ -45,8 +45,8 @@ const BlogPost = ({ blogData }) => {
                 <ImageElement src={selectedBlog?.image ?? ""} alt={"blog-image"} className={'w-full'} />
             </div>
 
-            <div className="flex items-center justify-center">
-                <div className="container md:px-60 px-4">
+            <div className="">
+                <div className="lg:px-[120px] px-4">
                     <div className="w-full h-[2px] my-2 bg-[#000]"></div>
                     <div className="sm:flex justify-between items-center py-4 w-full">
                         <Author name={`${selectedBlog?.author?.first_name ?? ""} ${selectedBlog?.author?.last_name ?? ""}`} image={authorImg} date={formattedDate(selectedBlog?.published_at ?? "")} />
