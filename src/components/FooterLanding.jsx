@@ -115,7 +115,7 @@ const FooterLanding = () => {
           </div>
           <div className='space-y-0 flex flex-col'>
             <div
-              className={` hover:text-gray-300 transition-colors block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] lg:mt-[42px] ${location?.pathname !== '/blog' ? 'cursor-pointer' : 'none' } `}
+              className={`  block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] lg:mt-[42px] ${location?.pathname !== '/blog' ? 'hover:text-gray-300 transition-colors cursor-pointer' : 'none' } `}
               onClick={handleBlogNavigation}
             >
               Blogs
