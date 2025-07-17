@@ -1,14 +1,34 @@
 import React from "react";
 import curvedline from "../assets/curvedline.svg"; // Adjust the path as necessary
-import accel from "../assets/accel.jpg"; // Adjust the path as necessary
-import sequoia from "../assets/sequoia.jpg"; // Adjust the path as necessary
-import alter from "../assets/alter.jpg"; // Adjust the path as necessary
-import hustleFund from "../assets/hustlefund.jpg"; // Adjust the path as necessary
-import outsidevc from "../assets/outsidevc.jpg"; // Adjust the path as necessary
-import uv from "../assets/uv.jpg"; // Adjust the path as necessary
-import mbaventures from "../assets/mba.jpg"; // Adjust the path as necessary
-import foundationCapital from "../assets/foundationcapital.jpg"; // Adjust the path as necessary
-import inceptionstudio from "../assets/inceptionstudio.jpg"; // Adjust the path as necessary
+// import accel from "../assets/accel.jpg"; // Adjust the path as necessary
+// import accel from "../assets/accel.png"; // Adjust the path as necessary
+const accel="https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/accel.png"
+// import sequoia from "../assets/sequoia.jpg"; // Adjust the path as necessary
+// import sequoia from "../assets/sequoia.png"; // Adjust the path as necessary
+const sequoia = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/sequoia.png"
+// import alter from "../assets/alter.jpg"; // Adjust the path as necessary
+// import alter from "../assets/alter.png"; // Adjust the path as necessary
+const alter = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/alter.png"
+// import hustleFund from "../assets/hustlefund.jpg"; // Adjust the path as necessary 
+// import hustleFund from "../assets/hustlefund.svg"; // Adjust the path as necessary
+// import hustleFund from "../assets/hustleFund.png"; // Adjust the path as necessary
+const hustleFund = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/hustleFund.png"
+
+// import outsidevc from "../assets/outsidevc.jpg"; // Adjust the path as necessary
+// import outsidevc from "../assets/outsidevc.png"; // Adjust the path as necessary
+const outsidevc = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/outsidevc.png"
+// import uv from "../assets/uv.jpg"; // Adjust the path as necessary
+// import uv from "../assets/uv.png"; // Adjust the path as necessary
+const uv = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/uv.png"
+// import mbaventures from "../assets/mba.jpg"; // Adjust the path as necessary
+// import mbaventures from "../assets/mbaventures.png"; // Adjust the path as necessary
+const mbaventures = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/mbaventures.png"
+// import foundationCapital from "../assets/foundationcapital.jpg"; // Adjust the path as necessary
+// import foundationCapital from "../assets/foundationcapital.png"; // Adjust the path as necessary
+const foundationCapital = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/foundationCapital.png"
+// import inceptionstudio from "../assets/inceptionstudio.jpg"; // Adjust the path as necessary
+// import inceptionstudio from "../assets/inceptionstudio.png"; // Adjust the path as necessary
+const inceptionstudio = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/inceptionstudio.png"
 import leftcorner from "../assets/leftcorner.svg"; // Adjust the path as necessary
 import rightcorner from "../assets/rightcorner.svg"; // Adjust the path as necessary
 import leftcornerimg from "../assets/leftcornerimg.svg"; // Adjust the path as necessary
@@ -21,7 +41,7 @@ const Hero = () => {
     window.open(Cred, "_blank");
   };
   return (
-    <section className='relative bg-white pt-16 pb-20 sm:pt-24 sm:pb-32 overflow-hidden'>
+    <section className='relative bg-white sm:pt-24 sm:pb-32 md:pt-14 md:pb-40 overflow-hidden'>
       <div
         style={{ boxShadow: "0px 6px 18px 0px rgba(0, 0, 0, 0.12)" }}
         className='hidden lg:flex absolute bg-white top-[35%] -left-10 w-[220px] h-[300px] rotate-[25deg] shadow-2xl z-10 overflow-hidden items-center justify-center'
@@ -57,8 +77,8 @@ const Hero = () => {
         className="absolute top-[40%] right-0 w-44 h-44  z-10"
       />
    */}
-      <div className='w-full lg:w-[77%] mx-auto px-4 sm:px-6 lg:px-8 text-center'>
-        <h1 className='font-grotesk  text-[38px] lg:text-[72px] leading-[36px] lg:leading-[68px] font-bold text-black mb-3 lg:mb-8'>
+      <div className='w-full lg:w-[80%] mx-auto px-4 sm:px-6 lg:px-8 text-center'>
+        <h1 className='font-grotesk pt-20 md:pt-0 text-[38px] lg:text-[72px] leading-[36px] lg:leading-[68px] font-bold text-black mb-3 lg:mb-8'>
           MEET CREDGPT: YOUR AI ASSISTANT FOR CREDIT CARDS
         </h1>
 
@@ -110,7 +130,7 @@ const Hero = () => {
                   alt='Hustle Fund'
                   className='h-[12px] lg:h-8'
                 />
-                <img src={alter} alt='Alter' className='h-[12px] lg:h-8' />
+                <img src={alter} alt='Alter' className='h-[16px] lg:h-10' />
                 <img
                   src={outsidevc}
                   alt='Outside VC'
@@ -119,12 +139,12 @@ const Hero = () => {
                 <img
                   src={uv}
                   alt='Union Ventures'
-                  className='h-[12px] lg:h-8'
+                  className='h-[14px] lg:h-9 -ml-4 md:-ml-10 '
                 />
                 <img
                   src={mbaventures}
                   alt='MB Ventures'
-                  className='h-[12px] lg:h-8'
+                  className='h-[17px] lg:h-14 lg:-ml-10'
                 />
               </div>
             </div>
@@ -143,9 +163,9 @@ const Hero = () => {
                 Scouts
               </p>
 
-              <div className='flex flex-col md:flex-row flex-wrap justify-center items-start lg:items-center lg:gap-16 gap-5 mt-[20px] lg:mt-0 '>
-                <img src={sequoia} alt='Sequoia' className='h-[12px] lg:h-8' />
-                <img src={accel} alt='Accel' className='h-[12px] lg:h-8' />
+              <div className='flex flex-col md:flex-row flex-wrap justify-center items-start lg:items-center lg:gap-14 gap-5 mt-[20px] lg:mt-0 '>
+                <img src={sequoia} alt='Sequoia' className='h-[18px] lg:h-16' />
+                <img src={accel} alt='Accel' className='h-[18px] lg:h-14' />
               </div>
             </div>
 
@@ -158,12 +178,12 @@ const Hero = () => {
                 <img
                   src={foundationCapital}
                   alt='Foundation Capital'
-                  className='h-[12px] lg:h-8'
+                  className='h-[14px] lg:h-8'
                 />
                 <img
                   src={inceptionstudio}
                   alt='Inception Studio'
-                  className='h-[12px] lg:h-8'
+                  className='h-[14px] lg:h-8'
                 />
               </div>
             </div>

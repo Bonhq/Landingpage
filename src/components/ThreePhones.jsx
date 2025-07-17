@@ -1,7 +1,13 @@
 import React from "react";
-import MobilePhone from "../assets/svg/mobile.svg"
-import MobilePhone2 from "../assets/svg/mobile2.svg"
-import CredGPTvideo from '../assets/CredGPTvideo.mp4'
+// import MobilePhone from "../assets/svg/mobile.svg"
+// import MobileLeft from "../assets/MobileLeft.png"
+const MobileLeft = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/MobileLeft.png"
+
+// import MobilePhone2 from "../assets/svg/mobile2.svg"
+// import MobileRight from "../assets/MobileRight.png"
+const MobileRight = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/MobileRight.png"
+// import CredGPTvideo from '../assets/CredGPTvideo.mp4'
+const CredGPTvideo = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/CredGPTvideo.mp4"
 
 const ThreePhones = () => {
   const svgString = encodeURIComponent(`
@@ -27,13 +33,13 @@ const ThreePhones = () => {
         </div>
         <div className="mt-[48px] lg:mt-[80px] flex items-center justify-center flex-row -ml-44">
           <div className="max-w-[121px] max-h-[246px] sm:max-w-[240px] sm:max-h-[590px] lg:max-w-[340px] lg:max-h-[690px] z-10" >
-            <img src={MobilePhone} alt='mobile img' className="object-cover ml-44"  />
+            <img src={MobileLeft} alt='mobile img' className="object-cover ml-44"  />
           </div>
           {/* <div className="max-w-[131px] max-h-[265px] sm:max-w-[267px] sm:max-h-[575px] lg:max-w-[367px] lg:max-h-[745px] z-20" >
             <img src={MobilePhone} alt='mobile img' className="object-cover ml-22"  />
           </div> */}
         <div className="relative max-w-[131px] max-h-[265px] sm:max-w-[267px] sm:max-h-[575px] lg:max-w-[367px] lg:max-h-[745px] z-20">
-  <img src={MobilePhone} alt="mobile img" className="object-cover ml-22" />
+  <img src={MobileLeft} alt="mobile img" className="object-cover ml-22" />
 
   <div className="absolute top-[3%]  left-[73%] sm:left-[39%] sm:rounded-[30px] rounded-[20px] lg:left-[30%] w-[88%] h-[95%] lg:rounded-[50px] overflow-hidden">
     <video
@@ -48,7 +54,7 @@ const ThreePhones = () => {
 </div>
 
           <div className="max-w-[121px] max-h-[246px] sm:max-w-[240px] sm:max-h-[590px] lg:max-w-[340px] lg:max-h-[690px] z-10" >
-            <img src={MobilePhone2} alt='mobile img' className="object-cover"  />
+            <img src={MobileRight} alt='mobile img' className="object-cover"  />
           </div>
         </div>
       </div>

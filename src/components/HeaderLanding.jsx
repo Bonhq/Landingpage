@@ -38,7 +38,7 @@ const HeaderLanding = () => {
   };
 
   return (
-    <header className='bg-white sticky top-0 z-50 w-full'>
+    <header className='bg-white top-0 z-50 w-full'>
       <div className='w-full px-4 sm:px-6 lg:py-6 xl:py-8 lg:px-[120px]'>
         <div className=' mx-auto flex justify-between items-center'>
           {/* Logo */}
@@ -50,7 +50,7 @@ const HeaderLanding = () => {
               <img
                 src={bonLogo}
                 alt='Bon Logo'
-                className='h-8 lg:h-[26px] w-auto lg:w-[114px]'
+                className='h-6 lg:h-[26px] w-auto lg:w-[114px]'
               />
             </div>
           </div>

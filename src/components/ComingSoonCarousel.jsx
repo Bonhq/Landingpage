@@ -2,44 +2,72 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
-import carouselsun from "../assets/carouselsun.png";
-import carouselhill from "../assets/carouselhill.png";
+// import carouselsun from "../assets/carouselsun.jpg";
+const carouselsun = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselsun.jpg"
+// import carouselhill from "../assets/carouselhill.png";
+const carouselhill = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselhill.png"
+// import carouselrc from "../assets/carouselrc.png";
+const carouselrc = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselrc.png"
+// import carouselmarriage from "../assets/carouselmarriage.jpg";
+const carouselmarriage = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselmarriage.jpg"
+// import carouselcar from "../assets/carouselcar.jpg";
+const carouselcar = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselcar.jpg"
+// import carouselgraduate from "../assets/carouselgraduate.jpg";
+const carouselgraduate = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselgraduate.jpg"
+// import carouselfamily from "../assets/carouselfamily.png";
+const carouselfamily = 'https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselfamily.png'
+
+
 
 const features = [
   {
     title: "Pay all your credit card bills at one place",
     description:
       "Track and pay all credit card bills in one place. Rewards, credit score, credit builder, and credit optimizer.",
-    imageSrc: carouselsun,
+    imageSrc: carouselhill,
     imageAlt: "Mountain landscape with silhouette",
   },
   {
     title: "Find and apply in one single click",
     description:
-      "Credit creation and approve applications, personalized recommendations based on your profile.",
-    imageSrc: carouselhill,
+      "Credit chatbot and agentic applications.",
+    imageSrc: carouselsun,
     imageAlt: "Mountain peak at sunset",
   },
   {
     title: "Get lowest interest on credit card debt",
     description:
       "Approve to roll existing credit card debts into a single lower interest rate.",
-    imageSrc: carouselhill,
+    imageSrc: carouselrc,
     imageAlt: "Amusement park ride",
   },
   {
-    title: "Improve your credit score fast",
+    title: "Instant pre-approved personal loans",
     description:
-      "Advanced algorithms and personalized recommendations to boost your credit rating quickly and efficiently.",
-    imageSrc: carouselsun,
-    imageAlt: "Technology circuit board",
+      "Frictionless personal lending, refi, etc.",
+    imageSrc: carouselmarriage,
+    imageAlt: "Frictionless personal lending",
   },
   {
-    title: "Smart financial planning",
+    title: "Auto Management",
     description:
-      "AI-powered insights to help you make better financial decisions and achieve your goals faster.",
-    imageSrc: carouselhill,
-    imageAlt: "Woman using laptop",
+      "Auto loans, refi, insurance, rewards, etc.",
+    imageSrc: carouselcar,
+    imageAlt: "Auto Management",
+  },
+  {
+    title: "Student loans",
+    description:
+      "Refi student debt",
+    imageSrc: carouselgraduate,
+    imageAlt: "Student loans",
+  },
+  {
+    title: "Mortgage",
+    description:
+      "Mortgage search, refi,",
+    imageSrc: carouselfamily,
+    imageAlt: "Mortgage",
   },
 ];
 
@@ -54,7 +82,7 @@ const ComingSoonCarousel = () => {
         <Swiper
           spaceBetween={20}
           slidesPerView="auto"
-          loop={true}
+          loop={false}
           mousewheel={{
             forceToAxis: true,
             releaseOnEdges: true,
@@ -68,7 +96,7 @@ const ComingSoonCarousel = () => {
           {features.map((feature, index) => (
             <SwiperSlide
               key={index}
-              className="!w-[85vw] lg:!w-[440px] !h-[600px] lg:!h-[700px] flex-shrink-0 rounded-xl overflow-hidden relative"
+              className="!w-[85vw] lg:!w-[400px] !h-[600px] lg:!h-[700px] flex-shrink-0 rounded-xl overflow-hidden relative"
             >
               <img
                 src={feature.imageSrc}

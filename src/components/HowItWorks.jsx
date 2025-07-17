@@ -1,9 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-
-import featureimage2 from "../assets/MasterCards/FeatureImage2.png";
-import featureimage4 from "../assets/MasterCards/FeatureImage4.png";
-import featureimage25 from "../assets/MasterCards/FeatureImage25.png";
 import chasefreedom from '../assets/chasefreedom.png'
 import amex6 from '../assets/amex6.png'
 import amexgold from '../assets/amexgold.png'
@@ -18,9 +14,15 @@ import venturex from '../assets/venturex.png'
 import venturex10 from '../assets/venturex10.png'
 import visablue from '../assets/visablue.png'
 import visablue12 from '../assets/visablue12.png'
-import mobileinterface from '../assets/mobileinterface.png'
+// import mobileinterface from '../assets/mobileinterface.png'
+// import MobileStep from '../assets/MobileStep.png'
+const MobileStep = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/MobileStep.png"
 import { Cred } from "../BlogContainer/constant/url";
+const featureimage2 = "https://bon-app-public.s3.us-west-1.amazonaws.com/webappmedia/webappmedia/FeatureImage2.png"
+const featureimage4 = "https://bon-app-public.s3.us-west-1.amazonaws.com/webappmedia/webappmedia/FeatureImage4.png"
+const featureimage25 = "https://bon-app-public.s3.us-west-1.amazonaws.com/webappmedia/webappmedia/FeatureImage25.png"
 
+    
 const HowItWorks = () => {
   const handleRedirect = () => {
     window.open(Cred, "_blank");
@@ -35,7 +37,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="flex flex-col justify-start bg-white rounded-3xl px-4 md:p-[70px] mb-4  md:mb-8 min-h-[518px]"
-style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
+          style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
           <div className="flex flex-col lg:flex-row h-full items-start gap-6 lg:gap-12">
             <div className="w-full lg:w-1/2 mt-10 ">
               <div className="mb-5">
@@ -65,7 +67,7 @@ style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
                       backgroundPosition: "top",
                     }}
                   >
-                    <div className="absolute inset-0 bg-black/30  z-0 bg-gradient-to-br from-black/90 to-transparent"></div>
+                    <div className="absolute inset-0 bg-black/30  z-5 bg-gradient-to-br from-black/90 to-transparent"></div>
 
                     <div className="text-white text-[14px] mb-3 z-10 leading-[16px]">
                       Best cashback credit card?
@@ -84,10 +86,12 @@ style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
                   <div className="flex gap-3 w-full justify-center">
                     <div
                       className="relative bg-gray-900  p-4 text-white  w-[180px] h-[180px] flex flex-col bg-center bg-no-repeat bg-cover"
-                      style={{ backgroundImage: `url(${featureimage4})`,
-                    backgroundSize: "cover",
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "center", }}
+                      style={{
+                        backgroundImage: `url(${featureimage4})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                      }}
                     >
                       <div className="absolute inset-0 bg-black/30 z-0 bg-gradient-to-br from-black/90 to-transparent"></div>
                       <div className="text-white text-[14px] mb-3 z-10 leading-[16px]">
@@ -106,14 +110,16 @@ style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
 
                     <div
                       className="relative bg-gray-900  p-4 text-white  w-[180px] h-[180px] flex flex-col bg-center bg-no-repeat bg-cover"
-                      style={{ backgroundImage: `url(${featureimage25})`,
-                    backgroundSize: "cover",
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "center", }}
+                      style={{
+                        backgroundImage: `url(${featureimage25})`,
+                        backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        backgroundPosition: "center",
+                      }}
                     >
                       <div className="absolute inset-0 bg-black/30  z-0 bg-gradient-to-br from-black/90 to-transparent"></div>
                       <div className="text-white text-[14px] mb-3 z-10 leading-[16px]">
-                        Want to travel for free with just points?
+                        Bad credit? Let's find a bank that approves.
                       </div>
                       <div className="flex-1 flex items-center justify-center mb-3 z-10" />
                       <div className="w-[148px] px-3 py-1.5 bg-white inline-flex justify-center items-center gap-2 z-10">
@@ -143,7 +149,7 @@ style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
                       img: featureimage4,
                     },
                     {
-                      title: "Want to travel for free with just points?",
+                      title: "Bad credit? Let's find a bank that approves.",
                       img: featureimage25,
                     },
                     // {
@@ -185,7 +191,7 @@ style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start order-last lg:order-first mt-5 lg:mt-0">
               <div className="w-full h-full md:w-full">
                 <img
-                  src={mobileinterface}
+                  src={MobileStep}
                   alt="Mobile App Interface"
                   className="w-[481px] h-auto lg:h-[450px] object-contain"
                 />
@@ -210,7 +216,7 @@ style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
           </div>
         </div>
 
-        <div className="bg-white rounded-3xl  mb-4 md:mb-8 min-h-[518px]"style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
+        <div className="bg-white rounded-3xl  mb-4 md:mb-8 min-h-[518px]" style={{ boxShadow: "0px 12px 48px 0px rgba(0, 0, 0, 0.08)" }}>
           <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-12">
             <div className="w-full lg:w-1/2 p-4 md:p-[70px] mt-4 lg:mt-0">
               <div className="mb-3">

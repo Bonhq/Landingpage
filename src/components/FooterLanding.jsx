@@ -113,7 +113,7 @@ const FooterLanding = () => {
               <img src={Instagram} alt='instagram' />
             </button>
           </div>
-          <div className='space-y-0 flex flex-col'>
+          <div className='space-y-0 flex flex-col gap-10'>
             <div
               className={`  block mb-3 lg:text-[20px] text-white lg:leading-[30px] lg:mb-[42px] lg:mt-[42px] ${location?.pathname !== '/blog' ? 'hover:text-gray-300 transition-colors cursor-pointer' : 'none' } `}
               onClick={handleBlogNavigation}
