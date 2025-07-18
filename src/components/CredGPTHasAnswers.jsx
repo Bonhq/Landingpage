@@ -447,8 +447,8 @@ const CredGPTHasAnswers = () => {
           ))}
         </Swiper>
       </div>
-      <div className="w-full flex flex-col items-center justify-center gap-10 mt-16">
-        <p className="text-[#BBBBBB] text-sm italic">Built by people from</p>
+      <div className="w-full flex flex-col items-center justify-center gap-2 mt-16">
+        <p className="text-[#555555] text-base italic">Built by people from</p>
         <div className="flex lg:w-[60%] items-center justify-between md:gap-12 ">
           <img
             src={standford}
@@ -458,7 +458,7 @@ const CredGPTHasAnswers = () => {
           <img
             src={fico}
             alt="FICO"
-            className="w-[50px] h-[18px] lg:w-[110px] lg:h-[40px] ml-12"
+            className="w-[50px] h-[18px] lg:w-[110px] lg:h-[40px] ml-14"
           />
 
           <img
