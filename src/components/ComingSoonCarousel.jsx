@@ -10,7 +10,8 @@ const carouselmarriage = "https://bon-app-public.s3.us-west-1.amazonaws.com/land
 const carouselcar = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselcar.jpg"
 const carouselgraduate = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselgraduate.jpg"
 const carouselfamily = 'https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/carouselfamily.png'
-import Blackcard from '../assets/Blackcard.png'
+// import Blackcard from '../assets/Blackcard.png'
+const Blackcard = "https://bon-app-public.s3.us-west-1.amazonaws.com/landingpagemedia/landingpagemedia/Blackcard.PNG"
 const features = [
   {
     title: "",

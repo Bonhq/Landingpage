@@ -92,7 +92,7 @@ const Hero = () => {
           {/* <a className="font-grotesk inline-block text-[20px] bg-black w-[340px] h-[64px] text-white pb -1 px-8 py-4 rounded-md hover:bg-gray-800 transition-all duration-200 font-semibold text-lg">
             TRY FOR FREE
           </a>   */}
-          <div className='lg:w-[340px] w-[240px] lg:h-16 px-2.5 py-4 bg-black inline-flex justify-center items-center gap-2.5 cursor-pointer' onClick={handleRedirect}>
+          <div className='w-[240px] lg:w-[340px] lg:h-16 px-2.5 py-4 bg-black inline-flex justify-center items-center gap-2.5 cursor-pointer' onClick={handleRedirect}>
             <div className='lg:w-[207px] lg:h-[18px] text-center justify-start text-white lg:text-[20px] uppercase tracking-[0.2px]'>
               try for free
             </div>

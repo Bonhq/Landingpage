@@ -105,8 +105,8 @@ const FAQ = () => {
             <br />
             explore the fastest way forward.
           </p>
-          <div className='mt-10 mb-20 px-2.5 py-4 bg-black inline-flex justify-center items-center gap-2.5 cursor-pointer' onClick={handleRedirect}>
-            <div className="w-[207px] h-[25px] lg:w-[340px] lg:h-[64px] text-center justify-start text-white lg:text-[20px] uppercase tracking-[0.2px]">
+          <div className='mt-10 mb-20 w-[240px] lg:w-[340px] lg:h-16 px-2.5 py-4 bg-black inline-flex justify-center items-center gap-2.5 cursor-pointer' onClick={handleRedirect}>
+            <div className="text-center justify-start text-white lg:text-[20px] uppercase tracking-[0.2px]">
               try for free
             </div>
           </div>
